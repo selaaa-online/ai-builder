@@ -27,7 +27,7 @@
 
     <!-- Override RepositoryUrl/PackageProjectUrl with your repository before publishing. -->
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl Condition="'$(RepositoryUrl)' == ''">https://github.com/your-org/AIBuilder</RepositoryUrl>
+    <RepositoryUrl Condition="'$(RepositoryUrl)' == ''">https://github.com/selaaa-online/ai-builder</RepositoryUrl>
     <PackageProjectUrl Condition="'$(PackageProjectUrl)' == ''">$(RepositoryUrl)</PackageProjectUrl>
 
     <!-- Symbols + source link + reproducible builds -->
