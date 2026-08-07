@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>AIBuilder.Prompts</PackageId>
+    <Description>Reusable prompt templates for AIBuilder.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIBuilder.DependencyInjection\AIBuilder.DependencyInjection.csproj" />
+  </ItemGroup>
+
+</Project>

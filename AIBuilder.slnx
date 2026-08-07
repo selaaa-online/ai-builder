@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/AIBuilder.Playground.Web/AIBuilder.Playground.Web.csproj" />
+    <Project Path="samples/AIBuilder.Sample.Console/AIBuilder.Sample.Console.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/AIBuilder.Abstractions/AIBuilder.Abstractions.csproj" />
+    <Project Path="src/AIBuilder.AzureOpenAI/AIBuilder.AzureOpenAI.csproj" />
+    <Project Path="src/AIBuilder.Cache/AIBuilder.Cache.csproj" />
+    <Project Path="src/AIBuilder.Core/AIBuilder.Core.csproj" />
+    <Project Path="src/AIBuilder.DependencyInjection/AIBuilder.DependencyInjection.csproj" />
+    <Project Path="src/AIBuilder.Memory/AIBuilder.Memory.csproj" />
+    <Project Path="src/AIBuilder.Ollama/AIBuilder.Ollama.csproj" />
+    <Project Path="src/AIBuilder.OpenAI/AIBuilder.OpenAI.csproj" />
+    <Project Path="src/AIBuilder.Prompts/AIBuilder.Prompts.csproj" />
+    <Project Path="src/AIBuilder.RAG/AIBuilder.RAG.csproj" />
+    <Project Path="src/AIBuilder.Telemetry/AIBuilder.Telemetry.csproj" />
+    <Project Path="src/AIBuilder.Tools/AIBuilder.Tools.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AIBuilder.Core.Tests/AIBuilder.Core.Tests.csproj" />
+    <Project Path="tests/AIBuilder.IntegrationTests/AIBuilder.IntegrationTests.csproj" />
+  </Folder>
+</Solution>

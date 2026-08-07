@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>AIBuilder.Memory</PackageId>
+    <Description>Conversation memory for AIBuilder (in-memory store).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AIBuilder.DependencyInjection\AIBuilder.DependencyInjection.csproj" />
+  </ItemGroup>
+
+</Project>
