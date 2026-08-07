@@ -37,6 +37,11 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <Deterministic>true</Deterministic>
     <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+
+    <!-- API surface validation. After publishing 1.0.0, set the baseline below so future
+         releases fail the build on a breaking public-API change:
+         <PackageValidationBaselineVersion>1.0.0</PackageValidationBaselineVersion> -->
+    <EnablePackageValidation>true</EnablePackageValidation>
   </PropertyGroup>
 
   <ItemGroup>
