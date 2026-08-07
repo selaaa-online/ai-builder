@@ -92,3 +92,30 @@ var context = RagContextBuilder.BuildContext(hits);
 > Providers: OpenAI, Azure OpenAI, Ollama. Middleware: logging, retry, caching, cost,
 > rate limiting, telemetry, tools. Plus prompt templates, conversation memory, and RAG.
 
+## Building & testing
+
+```powershell
+dotnet build AIBuilder.slnx -c Release          # net8.0 + net9.0 + net10.0, warnings-as-errors
+dotnet test  AIBuilder.slnx -c Release          # unit tests (all TFMs) + integration (skipped without a key)
+dotnet pack  AIBuilder.slnx -c Release -o artifacts
+```
+
+Integration tests run against a live provider and are skipped unless `OPENAI_API_KEY` is set.
+CI (build + multi-TFM test + pack) is defined in `.github/workflows/ci.yml`.
+
+Before publishing to NuGet, set your repository URL:
+
+```powershell
+dotnet pack -c Release /p:RepositoryUrl=https://github.com/<owner>/<repo>
+```
+
+## Status & known limitations
+
+- **Retry** applies to non-streaming responses only; streaming is passed through.
+- **Rate limiting** is per-process (in-memory), not distributed.
+- **Conversation memory** and the **RAG vector store** are in-memory; external backends
+  (Redis, SQL, Cosmos DB, pgvector) are not yet included.
+- **Structured output** and **tool calling** use runtime reflection and are **not** NativeAOT/trim-safe.
+  The rest of the pipeline is reflection-free.
+
+
