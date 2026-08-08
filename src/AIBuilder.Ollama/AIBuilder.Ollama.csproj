@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.Ollama</PackageId>
+    <PackageId>Selaaa.AIBuilder.Ollama</PackageId>
     <Description>Ollama (local LLM) provider for AIBuilder.</Description>
   </PropertyGroup>
 

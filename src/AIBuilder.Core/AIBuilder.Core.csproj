@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.Core</PackageId>
+    <PackageId>Selaaa.AIBuilder.Core</PackageId>
     <Description>Fluent client and middleware for AIBuilder — the composable AI middleware pipeline for .NET.</Description>
   </PropertyGroup>
 

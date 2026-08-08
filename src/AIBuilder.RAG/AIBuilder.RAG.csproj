@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.RAG</PackageId>
+    <PackageId>Selaaa.AIBuilder.RAG</PackageId>
     <Description>Provider-agnostic retrieval-augmented generation components for AIBuilder.</Description>
   </PropertyGroup>
 

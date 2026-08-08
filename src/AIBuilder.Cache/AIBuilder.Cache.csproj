@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.Cache</PackageId>
+    <PackageId>Selaaa.AIBuilder.Cache</PackageId>
     <Description>Response caching middleware for AIBuilder (in-memory and distributed).</Description>
   </PropertyGroup>
 

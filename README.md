@@ -106,31 +106,31 @@ brings in the core pipeline transitively.
 
 ```powershell
 # Minimal: OpenAI provider + core pipeline
-dotnet add package AIBuilder.OpenAI
+dotnet add package Selaaa.AIBuilder.OpenAI
 
 # Add the middleware / features you need
-dotnet add package AIBuilder.Cache
-dotnet add package AIBuilder.Telemetry
-dotnet add package AIBuilder.Tools
-dotnet add package AIBuilder.Prompts
-dotnet add package AIBuilder.Memory
-dotnet add package AIBuilder.RAG
+dotnet add package Selaaa.AIBuilder.Cache
+dotnet add package Selaaa.AIBuilder.Telemetry
+dotnet add package Selaaa.AIBuilder.Tools
+dotnet add package Selaaa.AIBuilder.Prompts
+dotnet add package Selaaa.AIBuilder.Memory
+dotnet add package Selaaa.AIBuilder.RAG
 ```
 
 | Package | Purpose | Key API |
 | --- | --- | --- |
-| `AIBuilder.Abstractions` | Interfaces and models | `IAIClient`, `IAIRequestBuilder`, `AIResponse` |
-| `AIBuilder.Core` | Fluent client + retry, cost, rate-limit middleware | `AIClient`, `RetryChatClient` |
-| `AIBuilder.DependencyInjection` | DI + middleware registration | `AddAIBuilder()`, `UseRetry()`, `UseCost()` |
-| `AIBuilder.OpenAI` | OpenAI provider | `UseOpenAI()` |
-| `AIBuilder.AzureOpenAI` | Azure OpenAI provider | `UseAzureOpenAI()` |
-| `AIBuilder.Ollama` | Ollama / local LLM provider | `UseOllama()` |
-| `AIBuilder.Cache` | Response caching | `UseMemoryCache()`, `UseDistributedCache()` |
-| `AIBuilder.Telemetry` | OpenTelemetry | `UseTelemetry()` |
-| `AIBuilder.Tools` | Tool / function calling | `AddTool()`, `AddTools<T>()`, `UseTools()` |
-| `AIBuilder.Prompts` | Reusable prompt templates | `AddPromptTemplates()` |
-| `AIBuilder.Memory` | Conversation memory | `UseInMemoryConversations()` |
-| `AIBuilder.RAG` | Retrieval-augmented generation | `AddRag()`, `RagPipeline`, `IRetriever` |
+| `Selaaa.AIBuilder.Abstractions` | Interfaces and models | `IAIClient`, `IAIRequestBuilder`, `AIResponse` |
+| `Selaaa.AIBuilder.Core` | Fluent client + retry, cost, rate-limit middleware | `AIClient`, `RetryChatClient` |
+| `Selaaa.AIBuilder.DependencyInjection` | DI + middleware registration | `AddAIBuilder()`, `UseRetry()`, `UseCost()` |
+| `Selaaa.AIBuilder.OpenAI` | OpenAI provider | `UseOpenAI()` |
+| `Selaaa.AIBuilder.AzureOpenAI` | Azure OpenAI provider | `UseAzureOpenAI()` |
+| `Selaaa.AIBuilder.Ollama` | Ollama / local LLM provider | `UseOllama()` |
+| `Selaaa.AIBuilder.Cache` | Response caching | `UseMemoryCache()`, `UseDistributedCache()` |
+| `Selaaa.AIBuilder.Telemetry` | OpenTelemetry | `UseTelemetry()` |
+| `Selaaa.AIBuilder.Tools` | Tool / function calling | `AddTool()`, `AddTools<T>()`, `UseTools()` |
+| `Selaaa.AIBuilder.Prompts` | Reusable prompt templates | `AddPromptTemplates()` |
+| `Selaaa.AIBuilder.Memory` | Conversation memory | `UseInMemoryConversations()` |
+| `Selaaa.AIBuilder.RAG` | Retrieval-augmented generation | `AddRag()`, `RagPipeline`, `IRetriever` |
 
 **Target frameworks:** `net8.0`, `net9.0`, `net10.0`.
 

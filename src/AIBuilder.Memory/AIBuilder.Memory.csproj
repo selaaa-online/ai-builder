@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.Memory</PackageId>
+    <PackageId>Selaaa.AIBuilder.Memory</PackageId>
     <Description>Conversation memory for AIBuilder (in-memory store).</Description>
   </PropertyGroup>
 

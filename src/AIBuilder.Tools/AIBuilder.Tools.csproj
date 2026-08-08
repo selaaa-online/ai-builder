@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.Tools</PackageId>
+    <PackageId>Selaaa.AIBuilder.Tools</PackageId>
     <Description>Tool/function calling framework for AIBuilder.</Description>
   </PropertyGroup>
 
