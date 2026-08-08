@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.Telemetry</PackageId>
+    <PackageId>Selaaa.AIBuilder.Telemetry</PackageId>
     <Description>OpenTelemetry middleware for AIBuilder.</Description>
   </PropertyGroup>
 

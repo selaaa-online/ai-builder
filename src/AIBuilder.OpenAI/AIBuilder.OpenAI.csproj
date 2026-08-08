@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.OpenAI</PackageId>
+    <PackageId>Selaaa.AIBuilder.OpenAI</PackageId>
     <Description>OpenAI provider for AIBuilder — the composable AI middleware pipeline for .NET.</Description>
   </PropertyGroup>
 

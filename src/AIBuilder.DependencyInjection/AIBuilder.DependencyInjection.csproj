@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>AIBuilder.DependencyInjection</PackageId>
+    <PackageId>Selaaa.AIBuilder.DependencyInjection</PackageId>
     <Description>ASP.NET Core / dependency-injection integration for AIBuilder.</Description>
   </PropertyGroup>
 
