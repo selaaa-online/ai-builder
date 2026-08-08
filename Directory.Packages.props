@@ -33,7 +33,7 @@
 
   <ItemGroup Label="Build">
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
-    <PackageVersion Include="System.ClientModel" Version="1.14.0" />
+    <PackageVersion Include="System.ClientModel" Version="1.15.0" />
   </ItemGroup>
 
 </Project>
