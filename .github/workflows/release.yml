@@ -42,11 +42,33 @@ jobs:
       - name: Pack
         run: dotnet pack AIBuilder.slnx -c Release --no-build -o artifacts -p:Version=$VERSION
 
+      - name: Verify packages were produced
+        run: |
+          if [ -z "${{ vars.NUGET_USER }}" ]; then
+            echo "::error::The NUGET_USER repository variable is not set. Set it to your nuget.org username under Settings > Secrets and variables > Actions > Variables."
+            exit 1
+          fi
+          count=$(ls -1 artifacts/*.nupkg 2>/dev/null | wc -l)
+          echo "Found $count .nupkg file(s):"
+          ls -l artifacts/*.nupkg
+          if [ "$count" -eq 0 ]; then
+            echo "::error::No .nupkg files were produced by the Pack step."
+            exit 1
+          fi
+
       - name: NuGet login (Trusted Publishing)
         id: nuget-login
         uses: NuGet/login@v1
         with:
           user: ${{ vars.NUGET_USER }}
+
+      - name: Verify API key was issued
+        run: |
+          if [ -z "${{ steps.nuget-login.outputs.NUGET_API_KEY }}" ]; then
+            echo "::error::Trusted Publishing did not return an API key. Confirm a Trusted Publishing policy exists on nuget.org for owner '${{ github.repository_owner }}', repository '${{ github.event.repository.name }}', workflow file 'release.yml'."
+            exit 1
+          fi
+          echo "A short-lived NuGet API key was issued."
 
       - name: Push to NuGet
         run: dotnet nuget push "artifacts/*.nupkg" --api-key "${{ steps.nuget-login.outputs.NUGET_API_KEY }}" --source https://api.nuget.org/v3/index.json --skip-duplicate
