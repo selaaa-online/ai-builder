@@ -13,7 +13,7 @@
 
   <ItemGroup Label="Providers">
     <PackageVersion Include="Azure.AI.OpenAI" Version="2.1.0" />
-    <PackageVersion Include="OllamaSharp" Version="5.4.30" />
+    <PackageVersion Include="OllamaSharp" Version="5.5.0" />
   </ItemGroup>
 
   <ItemGroup Label="Microsoft.Extensions">
